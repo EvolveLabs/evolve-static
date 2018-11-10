@@ -1,6 +1,7 @@
 :root {
-  --background-color: #121212;
-  --color: #ffffff;
+  --black: #121212;
+  --white: #ffffff;
+  --gray: #1b1b1b;
   --font-family: "Roboto", sans-serif;
 }
 
@@ -8,7 +9,96 @@ html,
 body {
   margin: 0;
   padding: 0;
-  background-color: var(--background-color);
-  color: var(--color);
+  background-color: var(--black);
+  color: var(--white);
   font-family: var(--font-family);
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-size: 2.1rem;
+}
+
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3.2rem;
+}
+
+.site-logo {
+  display: block;
+  width: auto;
+  height: 6rem;
+}
+
+.site-nav {
+  display: flex;
+  margin: 0;
+}
+
+.site-nav li {
+  display: block;
+}
+
+.site-nav a {
+  display: block;
+  text-decoration: none;
+  font-size: 2rem;
+  padding: 1.3rem 2rem;
+  color: var(--white);
+  font-weight: 300;
+}
+
+.site-nav a:hover {
+  opacity: 0.75;
+}
+
+.site-nav svg {
+  display: block;
+  height: 2.2rem;
+  width: auto;
+}
+
+.site-nav svg path {
+  fill: var(--white);
+}
+
+.main-content {
+  min-height: calc(100vh - 12.4rem - 11.2rem);
+}
+
+.page-section {
+  padding: 4rem 0;
+  font-size: 1em;
+  line-height: 1.65;
+}
+
+.page-section.page-section--gray {
+  background-color: var(--gray);
+}
+
+.page-section__inner {
+  max-width: 70rem;
+  margin: 0 auto;
+}
+
+.page-section__inner :first-child {
+  margin-top: 0;
+}
+
+.page-section__inner :last-child {
+  margin-bottom: 0;
+}
+
+.site-footer {
+  text-align: center;
+  padding: 3.2rem;
+}
+
+.site-footer svg {
+  display: inline-block;
 }
