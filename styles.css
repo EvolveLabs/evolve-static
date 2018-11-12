@@ -36,6 +36,10 @@ a {
 
 .site-logo {
   display: block;
+}
+
+.site-logo svg {
+  display: block;
   width: auto;
   height: 6rem;
 }
