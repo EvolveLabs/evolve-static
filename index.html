@@ -9,15 +9,16 @@
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,700,500,300" media="screen" rel="stylesheet" type="text/css" />
   <link rel="stylesheet" type="text/css" media="screen" href="./styles.css" />
 
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-675913-4"></script>
   <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-    gtag('config', 'UA-675913-4');
+    ga('create', 'UA-675913-4', 'evolvehq.com');
+    ga('require', 'displayfeatures');
+    ga('send', 'pageview');
   </script>
-
 
 </head>
 <body>
@@ -31,26 +32,26 @@
     </a>
     <ul class="site-nav">
       <li>
-        <a href="https://www.facebook.com/evolvehq" target="_blank">
+        <a href="https://www.facebook.com/evolvehq" target="_blank" data-ga="evolve-facebook">
           <svg xmlns="http://www.w3.org/2000/svg" width="53" height="100" viewBox="0 0 53 100">
             <path fill="#FFF" fill-rule="evenodd" d="M52.5.7v15.9h-9.4c-3.4 0-5.8.7-7 2.2-1.2 1.4-1.8 3.6-1.8 6.5v11.4h17.6l-2.4 17.7H34.3V100H15.9V54.4H.5V36.6h15.3V23.5c0-7.4 2.1-13.2 6.2-17.3C26.3 2.1 31.8 0 38.8 0c5.9 0 10.4.2 13.7.7z"/>
           </svg>
         </a>
       </li>
       <li>
-        <a href="https://www.twitter.com/evolvehq" target="_blank">
+        <a href="https://www.twitter.com/evolvehq" target="_blank" data-ga="evolve-twitter">
           <svg xmlns="http://www.w3.org/2000/svg" width="100" height="82" viewBox="0 0 100 82">
             <path fill="#FFF" fill-rule="evenodd" d="M100 10c-2.8 4.1-6.3 7.7-10.3 10.6 0 .6.1 1.5.1 2.7A57.67 57.67 0 0 1 80 55.5c-3.3 5-7.2 9.5-11.7 13.4-4.5 3.9-10 7-16.4 9.3-6.4 2.3-13.2 3.5-20.5 3.5-11.5 0-22-3.1-31.5-9.2 1.5.2 3.1.2 5 .2 9.5 0 18-2.9 25.4-8.8-4.4-.1-8.4-1.4-11.9-4.1-3.5-2.6-5.9-6-7.2-10.1 1.4.2 2.7.3 3.9.3 1.8 0 3.6-.2 5.4-.7-4.7-1-8.7-3.3-11.8-7.1-3.1-3.7-4.7-8.1-4.7-13V29c2.9 1.6 6 2.5 9.3 2.6-2.8-1.9-5-4.3-6.7-7.3-1.7-3-2.5-6.3-2.5-9.8 0-3.7.9-7.2 2.8-10.3 5.1 6.3 11.3 11.3 18.7 15.1a56.8 56.8 0 0 0 23.6 6.3c-.3-1.6-.5-3.2-.5-4.7 0-5.7 2-10.5 6-14.5s8.8-6 14.5-6c5.9 0 10.9 2.2 15 6.5 4.6-.9 8.9-2.5 13-5a20.2 20.2 0 0 1-9 11.3c3.9-.4 7.9-1.5 11.8-3.2z"/>
           </svg>
         </a>
       </li>
       <li>
-        <a href="http://blog.evolvehq.com/" target="_blank">
+        <a href="http://blog.evolvehq.com/" target="_blank" data-ga="evolve-blog">
           Evolve Blog
         </a>
       </li>
       <li>
-        <a href="https://player.me/" target="_blank" onClick="handleOutboundLinkClicks(event, 'player-me')">
+        <a href="https://player.me/" target="_blank" data-ga="player-me">
           Player.me
         </a>
       </li>
